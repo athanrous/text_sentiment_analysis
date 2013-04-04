@@ -36,6 +36,6 @@ class InsertData:
         cursor = db.cursor()
         cursor.execute(query)
         db.commit()
-        db.close()
+        db.close() # Close the db connection
 	
  
