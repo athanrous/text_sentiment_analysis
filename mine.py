@@ -40,7 +40,7 @@ class ExtractData :
     
     def connect_extract(self,query,filepath):
                  
-        db = MySQLdb.connect("localhost"," "," "," " ) #Here you have to  add your database credentials
+        db = MySQLdb.connect("localhost"," "," "," " ) #Add your database credentials
         cursor = db.cursor()
         cursor.execute(query)
         output = cursor.fetchall() 
